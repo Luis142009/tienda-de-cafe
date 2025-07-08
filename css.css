@@ -57,7 +57,6 @@ body {
   font-weight: bold;
 }
 
-/* HERO */
 .seccion-principal {
   height: 140vh;
   width: 90%;
@@ -104,7 +103,7 @@ body {
   font-weight: bold;
 }
 
-/* OFERTA */
+
 .seccion-oferta {
   height: 20vh;
   display: flex;
@@ -146,7 +145,7 @@ body {
   font-size: 1.3rem;
 }
 
-/* PRODUCTOS */
+
 .seccion-productos {
   display: flex;
   flex-direction: column;
@@ -258,13 +257,17 @@ body {
 
 .buscador {
   width: 25px;
+  height: 5vh;
+  margin-top: 15px;
 }
 .final{
   padding: 0.50rem 1rem;
   background-color: #b47b45;
   border-radius: 1rem;
 }
-
+.señores{
+  font-size: 1.2rem;
+}
 .recta {
   padding: 2rem;
   display: flex;
@@ -312,33 +315,45 @@ body {
   margin-top: -30px;
 }
 
+.señor{
+ font-size: 1rem;
+}
+
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
 
   .encabezado {
-    flex-direction: column;
-    gap: 1rem;
+   
+    gap: 2rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
   }
 
   .titulo-logo {
-    font-size: 2rem;
+    font-size: 1rem;
     padding-left: 0;
   }
-
+.señores{
+    font-size: 0.60rem;
+    margin-left: -10px;
+  }
   .navegacion {
-    flex-direction: column;
-    gap: 1rem;
     align-items: center;
+    gap: -20px;
+  }
+
+  .buscador{
+    width: 10px;
+    height: 2vh;
+    margin-top: -0px;
   }
 
   .seccion-principal {
     flex-direction: column;
-    height: auto;
+    height: 70vh;
     padding: 10vh 5%;
     text-align: center;
   }
@@ -374,24 +389,36 @@ body {
     height: auto;
     padding: 5vh 0;
     align-items: center;
+    margin-top: -180px;
+
   }
 
   .circulo-oferta,
-  .circulo2,
   .money {
     margin: 0;
-    position: static;
+    
     width: 130px;
     height: 130px;
     padding: 0;
-  }
+    margin-bottom: 4rem;
+    margin-top: 20px;
 
+  }
+  
+  .circulo2{
+    position: relative;
+  }
   .money {
-    padding-left: 0;
+     margin-left: 120px;
+    margin-top: -30px;
+    width: 120px;
+   
+
   }
 
   .oferta-texto {
     font-size: 1.1rem;
+    margin-top: 20px;
   }
 
   .seccion-productos {
@@ -417,7 +444,9 @@ body {
     height: auto;
     padding: 1.5rem;
   }
-
+  .señor{
+    margin-top: 100px;
+  }
   .imagen {
     height: auto;
   }
@@ -426,16 +455,16 @@ body {
     flex-direction: column;
     height: auto;
     align-items: center;
-    gap: 2rem;
   }
 
   .fondo1,
   .fondo2,
   .fondo3 {
-    width: 90%;
+    width: 100%;
     height: auto;
+   
   }
-
+  
   .pie {
     flex-direction: column;
     align-items: center;
@@ -474,8 +503,11 @@ body {
     text-align: center;
   }
 
-  .logo,
-  .buscador {
+  .logo {
     width: 20px;
+  }
+  .recta p{
+    margin-top: 20px;
+    text-align: center;
   }
 }
