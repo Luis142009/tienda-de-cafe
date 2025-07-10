@@ -362,23 +362,24 @@ body {
 
   .titulo-logo {
     font-size: 1rem;
-    padding-left: 0;
+     padding-right: 18px;
+     padding-left: 8px;
     text-align: center;
-    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+    flex: 0 0 auto;            
   white-space: nowrap;
   }
 .señores{
     font-size: 0.60rem;
     margin-left: -10px;
-    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+    flex: 0 0 auto;             
   white-space: nowrap;
   }
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 1.50rem;
+    gap: 2rem;
     max-width: 20px;
-    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+    flex: 0 0 auto;            
   white-space: nowrap;
    
     
@@ -388,7 +389,7 @@ body {
     width: 10px;
     height: 2vh;
     margin-top: -0px;
-    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+    flex: 0 0 auto;            
   white-space: nowrap;
   }
 
@@ -569,7 +570,7 @@ body {
 
   .vv {
     display: flex;
-    gap: 0.30rem;
+    gap: 1rem;
     padding: 0;
     flex-wrap: wrap; 
     justify-content: flex-end;
