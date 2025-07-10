@@ -354,7 +354,8 @@ body {
     height: auto;
     padding: 2vh 5%;
     text-align: center;
-    width: 90%;
+    width: 80%;
+    max-width: 20px;
      flex-wrap: nowrap;           
   align-items: center;
    box-sizing: border-box;
