@@ -27,7 +27,7 @@ body {
 
 .texto1 {
   color: white;
-  font-size: 1rem;
+  font-size: 0.80rem;
   padding: 3%;
   font-weight: bold;
 }
@@ -366,7 +366,7 @@ body {
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 2rem;
+    gap: 1.50rem;
     
   }
 
@@ -555,12 +555,17 @@ body {
     display: flex;
     gap: 0.30rem;
     padding: 0;
-    flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
+    flex-wrap: wrap; 
     justify-content: flex-end;
   }
 
   .logo {
     width: 14px;
   }
-
+  .texto1{
+    font-size: 0.70rem;
+  }
+  .señores{
+    font-size: 0.70rem;
+  }
 }
