@@ -12,19 +12,37 @@ body {
   overflow-x: hidden;
 }
 
-.logo {
-  width: 25px;
-}
-
 .inicio {
   background-color: #3b2b20;
   height: 7vh;
+  padding: 0.5rem;
 }
 
 .correr {
   display: flex;
-  justify-content: end;
+  justify-content: space-between; 
+  align-items: center;
+  height: 100%;
 }
+
+.texto1 {
+  color: white;
+  font-size: 1rem;
+  padding: 3%;
+  font-weight: bold;
+}
+
+.vv {
+  display: flex;
+  gap: 3rem;
+  padding: 3%;
+}
+
+.logo {
+  width: 25px;
+  height: auto;
+}
+
 
 .encabezado {
   display: flex;
@@ -33,6 +51,10 @@ body {
   background-color: #e4c796;
   padding: 3vh 5%;
   height: 11vh;
+}
+.cap{
+  display: flex;
+   justify-content:space-evenly;
 }
 
 .titulo-logo {
@@ -319,6 +341,7 @@ body {
  font-size: 1rem;
 }
 
+
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
@@ -343,6 +366,9 @@ body {
   .navegacion {
     align-items: center;
     gap: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
 
   .buscador{
@@ -503,11 +529,226 @@ body {
     text-align: center;
   }
 
-  .logo {
-    width: 20px;
-  }
+  
   .recta p{
     margin-top: 20px;
     text-align: center;
+  }
+   .inicio {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .correr {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .texto1 {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vv {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
+    justify-content: flex-end;
+  }
+
+  .logo {
+    width: 22px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* 🟤 SECCIÓN INICIO */
+  .inicio {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .correr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .texto1 {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .vv {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .logo {
+    width: 22px;
+    height: auto;
+  }
+
+  /* 🟤 SECCIÓN ENCABEZADO */
+  .encabezado {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    padding: 2vh 5%;
+    text-align: center;
+  }
+
+  .titulo-logo {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+
+  .navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* 🟤 SECCIÓN PRINCIPAL */
+  .seccion-principal {
+    flex-direction: column;
+    height: auto;
+    padding: 5vh 5%;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .contenedor-texto {
+    width: 100%;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .frase-principal,
+  .perfecion {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .descripcion-principal {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-top: 0;
+  }
+
+  .boton {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* 🟤 SECCIÓN DE PRODUCTOS (CAFÉS) */
+  .seccion-productos {
+    padding: 5vh 5%;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .tarjeta {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .imagen {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .nombre-producto {
+    font-size: 1.1rem;
+    padding-top: 1vh;
+  }
+
+  .inspe,
+  .insper {
+    padding: 15px 2rem;
+    font-size: 1rem;
+  }
+
+  /* 🟤 AJUSTES GENERALES */
+  .pie {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5vh 5%;
+  }
+
+  .grupo {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recta {
+    padding: 2vh 0;
+    margin-top: 0;
+  }
+
+  .rectangulo {
+    width: 95%;
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .titulo-fila {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .boton-falso {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .money {
+    margin-left: 100px;
+    width: 100px;
+  }
+  .cuadros{
+    flex-direction: column;
+    padding: 1.70rem;
   }
 }
