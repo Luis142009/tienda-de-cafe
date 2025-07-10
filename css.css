@@ -348,16 +348,18 @@ body {
   }
 
   .encabezado {
-   
     gap: 2rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
+    width: 90%;
+
   }
 
   .titulo-logo {
     font-size: 1rem;
     padding-left: 0;
+    text-align: center;
   }
 .señores{
     font-size: 0.60rem;
@@ -367,6 +369,8 @@ body {
     align-items: center;
     display: flex;
     gap: 1.50rem;
+    max-width: 20px;
+   
     
   }
 
