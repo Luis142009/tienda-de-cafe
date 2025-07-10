@@ -348,41 +348,38 @@ body {
   }
 
   .encabezado {
-    gap: 1rem;
+   
+    gap: 2rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
   }
 
   .titulo-logo {
     font-size: 1rem;
     padding-left: 0;
   }
-
-  .señores {
-    font-size: 0.85rem;
-    margin-left: 0;
+.señores{
+    font-size: 0.60rem;
+    margin-left: -10px;
   }
-
   .navegacion {
+    align-items: center;
+    gap: -20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
+    
   }
 
-  .buscador {
-    width: 80%;
-    height: 4vh;
-    margin: 0 auto;
+  .buscador{
+    width: 10px;
+    height: 2vh;
+    margin-top: -0px;
   }
 
   .seccion-principal {
     flex-direction: column;
-    height: auto;
+    height: 70vh;
     padding: 10vh 5%;
     text-align: center;
   }
@@ -418,32 +415,36 @@ body {
     height: auto;
     padding: 5vh 0;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: -180px;
+
   }
 
   .circulo-oferta,
   .money {
     margin: 0;
+    
     width: 130px;
     height: 130px;
+    padding: 0;
     margin-bottom: 4rem;
     margin-top: 20px;
-  }
 
-  .circulo2 {
+  }
+  
+  .circulo2{
     position: relative;
   }
-
   .money {
-    margin-left: 0;
+     margin-left: 120px;
     margin-top: -30px;
     width: 120px;
+   
+
   }
 
   .oferta-texto {
     font-size: 1.1rem;
     margin-top: 20px;
-    text-align: center;
   }
 
   .seccion-productos {
@@ -469,11 +470,9 @@ body {
     height: auto;
     padding: 1.5rem;
   }
-
-  .señor {
+  .señor{
     margin-top: 100px;
   }
-
   .imagen {
     height: auto;
   }
@@ -489,8 +488,9 @@ body {
   .fondo3 {
     width: 100%;
     height: auto;
+   
   }
-
+  
   .pie {
     flex-direction: column;
     align-items: center;
@@ -529,12 +529,12 @@ body {
     text-align: center;
   }
 
-  .recta p {
+  
+  .recta p{
     margin-top: 20px;
     text-align: center;
   }
-
-  .inicio {
+   .inicio {
     height: auto;
     padding: 0.5rem 1rem;
   }
@@ -554,7 +554,7 @@ body {
 
   .vv {
     display: flex;
-    gap: 0.5rem;
+    gap: rem;
     padding: 0;
     flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
     justify-content: flex-end;
@@ -562,202 +562,5 @@ body {
 
   .logo {
     width: 22px;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  /* 🟤 SECCIÓN INICIO */
-  .inicio {
-    height: auto;
-    padding: 0.5rem 1rem;
-  }
-
-  .correr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 1rem;
-  }
-
-  .texto1 {
-    font-size: 0.9rem;
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .vv {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .logo {
-    width: 22px;
-    height: auto;
-  }
-
-  /* 🟤 SECCIÓN ENCABEZADO */
-  .encabezado {
-    
-    gap: 1.50rem;
-    height: auto;
-    padding: 2vh 5%;
-    text-align: center;
-  }
-
-  .titulo-logo {
-    font-size: 1.5rem;
-    padding-left: 0;
-  }
-
-  .navegacion {
-    display: flex;
-    
-    justify-content: center;
-    gap: 1rem;
-  }
-  .señores{
-    font-size: 0.79rem;
-  }
-
-  /* 🟤 SECCIÓN PRINCIPAL */
-  .seccion-principal {
-    flex-direction: column;
-    height: auto;
-    padding: 5vh 5%;
-    text-align: center;
-    background-size: cover;
-  }
-
-  .contenedor-texto {
-    width: 100%;
-    align-items: center;
-    gap: 2vh;
-  }
-
-  .frase-principal,
-  .perfecion {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-
-  .descripcion-principal {
-    font-size: 1rem;
-    max-width: 90%;
-    margin-top: 0;
-  }
-
-  .boton {
-    width: 90%;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  /* 🟤 SECCIÓN DE PRODUCTOS (CAFÉS) */
-  .seccion-productos {
-    padding: 5vh 5%;
-    height: auto;
-    gap: 2rem;
-  }
-
-  .subtitulo {
-    font-size: 1.8rem;
-    margin-top: 0;
-    text-align: center;
-  }
-
-  .contenedor-productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    
-  }
-
-  .tarjeta {
-    width: 80%;
-    height: 120vh;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  .imagen {
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .nombre-producto {
-    font-size: 1.1rem;
-    padding-top: 1vh;
-  }
-
-  .inspe,
-  .insper {
-    padding: 15px 2rem;
-    font-size: 1rem;
-  }
-
-  /* 🟤 AJUSTES GENERALES */
-  .pie {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 5vh 5%;
-  }
-
-  .grupo {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .recta {
-    padding: 2vh 0;
-    margin-top: 0;
-  }
-
-  .rectangulo {
-    width: 95%;
-    padding: 1.5rem;
-    height: auto;
-  }
-
-  .titulo-fila {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .boton-falso {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
-  .money {
-    margin-left: 100px;
-    width: 100px;
-  }
-  .cuadros{
-    flex-direction: column;
-    padding: 1.70rem;
-    height: 140vh;
-  }
-  .recta p{
-    margin-top: 20px;
   }
 }
