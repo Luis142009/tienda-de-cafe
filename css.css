@@ -43,7 +43,6 @@ body {
   height: auto;
 }
 
-
 .encabezado {
   display: flex;
   gap: 20rem;
@@ -290,6 +289,9 @@ body {
 .señores{
   font-size: 1.2rem;
 }
+.unicovh{
+  font-size: 1.2rem;
+}
 .recta {
   padding: 2rem;
   display: flex;
@@ -362,24 +364,23 @@ body {
 
   .titulo-logo {
     font-size: 1rem;
-     padding-right: 18px;
-     padding-left: 8px;
+    padding-left: 0;
     text-align: center;
-    flex: 0 0 auto;            
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
   white-space: nowrap;
   }
 .señores{
     font-size: 0.60rem;
     margin-left: -10px;
-    flex: 0 0 auto;             
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
   white-space: nowrap;
   }
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 2rem;
+    gap: 1.50rem;
     max-width: 20px;
-    flex: 0 0 auto;            
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
   white-space: nowrap;
    
     
@@ -389,7 +390,7 @@ body {
     width: 10px;
     height: 2vh;
     margin-top: -0px;
-    flex: 0 0 auto;            
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
   white-space: nowrap;
   }
 
@@ -570,7 +571,7 @@ body {
 
   .vv {
     display: flex;
-    gap: 1rem;
+    gap: 0.50rem;
     padding: 0;
     flex-wrap: wrap; 
     justify-content: flex-end;
@@ -584,5 +585,13 @@ body {
   }
   .señores{
     font-size: 0.70rem;
+  }
+  .buscador{
+    width: 1rem;
+    height: 1rem;
+  }
+  .unicovh{
+    font-size: 0.70rem;
+    margin-left: 1rem;
   }
 }
