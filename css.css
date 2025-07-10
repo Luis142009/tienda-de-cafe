@@ -540,10 +540,10 @@ body {
   }
 
   .correr {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .texto1 {
@@ -554,9 +554,10 @@ body {
 
   .vv {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    padding: 0;
+    flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
+    justify-content: flex-end;
   }
 
   .logo {
@@ -609,7 +610,7 @@ body {
   /* 🟤 SECCIÓN ENCABEZADO */
   .encabezado {
     
-    gap: 1.60rem;
+    gap: 1.50rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
