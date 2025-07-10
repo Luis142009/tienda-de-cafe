@@ -554,13 +554,13 @@ body {
 
   .vv {
     display: flex;
-    gap: rem;
+    gap: 1rem;
     padding: 0;
     flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
     justify-content: flex-end;
   }
 
   .logo {
-    width: 22px;
+    width: 14px;
   }
 }
