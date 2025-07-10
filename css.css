@@ -348,38 +348,41 @@ body {
   }
 
   .encabezado {
-   
-    gap: 2rem;
+    gap: 1rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .titulo-logo {
     font-size: 1rem;
     padding-left: 0;
   }
-.señores{
-    font-size: 0.60rem;
-    margin-left: -10px;
-  }
-  .navegacion {
-    align-items: center;
-    gap: -20px;
-    display: flex;
-    flex-wrap: wrap;
-    
+
+  .señores {
+    font-size: 0.85rem;
+    margin-left: 0;
   }
 
-  .buscador{
-    width: 10px;
-    height: 2vh;
-    margin-top: -0px;
+  .navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .buscador {
+    width: 80%;
+    height: 4vh;
+    margin: 0 auto;
   }
 
   .seccion-principal {
     flex-direction: column;
-    height: 70vh;
+    height: auto;
     padding: 10vh 5%;
     text-align: center;
   }
@@ -415,36 +418,32 @@ body {
     height: auto;
     padding: 5vh 0;
     align-items: center;
-    margin-top: -180px;
-
+    margin-top: 2rem;
   }
 
   .circulo-oferta,
   .money {
     margin: 0;
-    
     width: 130px;
     height: 130px;
-    padding: 0;
     margin-bottom: 4rem;
     margin-top: 20px;
-
   }
-  
-  .circulo2{
+
+  .circulo2 {
     position: relative;
   }
+
   .money {
-     margin-left: 120px;
+    margin-left: 0;
     margin-top: -30px;
     width: 120px;
-   
-
   }
 
   .oferta-texto {
     font-size: 1.1rem;
     margin-top: 20px;
+    text-align: center;
   }
 
   .seccion-productos {
@@ -470,9 +469,11 @@ body {
     height: auto;
     padding: 1.5rem;
   }
-  .señor{
+
+  .señor {
     margin-top: 100px;
   }
+
   .imagen {
     height: auto;
   }
@@ -488,9 +489,8 @@ body {
   .fondo3 {
     width: 100%;
     height: auto;
-   
   }
-  
+
   .pie {
     flex-direction: column;
     align-items: center;
@@ -529,21 +529,21 @@ body {
     text-align: center;
   }
 
-  
-  .recta p{
+  .recta p {
     margin-top: 20px;
     text-align: center;
   }
-   .inicio {
+
+  .inicio {
     height: auto;
     padding: 0.5rem 1rem;
   }
 
   .correr {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .texto1 {
@@ -554,16 +554,16 @@ body {
 
   .vv {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    padding: 0;
-    flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
-    justify-content: flex-end;
   }
 
   .logo {
     width: 22px;
   }
 }
+
 @media (max-width: 500px) {
   body {
     overflow-x: hidden;
@@ -608,8 +608,8 @@ body {
 
   /* 🟤 SECCIÓN ENCABEZADO */
   .encabezado {
-    flex-direction: column;
-    gap: 1rem;
+    
+    gap: 1.60rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
@@ -622,9 +622,12 @@ body {
 
   .navegacion {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     gap: 1rem;
+  }
+  .señores{
+    font-size: 0.79rem;
   }
 
   /* 🟤 SECCIÓN PRINCIPAL */
@@ -679,11 +682,12 @@ body {
     align-items: center;
     gap: 2rem;
     width: 100%;
+    
   }
 
   .tarjeta {
-    width: 90%;
-    height: auto;
+    width: 80%;
+    height: 120vh;
     padding: 1rem;
     background-color: white;
     border-radius: 0.8rem;
@@ -750,5 +754,9 @@ body {
   .cuadros{
     flex-direction: column;
     padding: 1.70rem;
+    height: 140vh;
+  }
+  .recta p{
+    margin-top: 20px;
   }
 }
