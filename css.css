@@ -367,21 +367,21 @@ body {
     padding-left: 0;
     text-align: center;
     flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
-  white-space: nowrap;
+ 
   }
 .señores{
     font-size: 0.60rem;
     margin-left: -10px;
     flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
-  white-space: nowrap;
+  
   }
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 1.30rem;
+    gap: 1.20rem;
     max-width: 20px;
     flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
-  white-space: nowrap;
+  
    
     
   }
