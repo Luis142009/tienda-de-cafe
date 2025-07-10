@@ -378,7 +378,7 @@ body {
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 1.50rem;
+    gap: 1.30rem;
     max-width: 20px;
     flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
   white-space: nowrap;
