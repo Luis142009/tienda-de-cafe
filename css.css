@@ -365,9 +365,8 @@ body {
   }
   .navegacion {
     align-items: center;
-    gap: -20px;
     display: flex;
-    flex-wrap: wrap;
+    gap: 2rem;
     
   }
 
@@ -554,7 +553,7 @@ body {
 
   .vv {
     display: flex;
-    gap: 1rem;
+    gap: 0.30rem;
     padding: 0;
     flex-wrap: wrap; /* permite que las imágenes bajen si no caben */
     justify-content: flex-end;
@@ -563,4 +562,5 @@ body {
   .logo {
     width: 14px;
   }
+
 }
