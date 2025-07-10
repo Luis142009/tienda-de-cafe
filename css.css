@@ -348,11 +348,15 @@ body {
   }
 
   .encabezado {
-    gap: 2rem;
+    gap: 1rem;
     height: auto;
     padding: 2vh 5%;
     text-align: center;
     width: 90%;
+     flex-wrap: nowrap;         
+  overflow-x: auto;   
+  align-items: center;
+   box-sizing: border-box;
 
   }
 
@@ -360,16 +364,22 @@ body {
     font-size: 1rem;
     padding-left: 0;
     text-align: center;
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+  white-space: nowrap;
   }
 .señores{
     font-size: 0.60rem;
     margin-left: -10px;
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+  white-space: nowrap;
   }
   .navegacion {
     align-items: center;
     display: flex;
     gap: 1.50rem;
     max-width: 20px;
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+  white-space: nowrap;
    
     
   }
@@ -378,6 +388,8 @@ body {
     width: 10px;
     height: 2vh;
     margin-top: -0px;
+    flex: 0 0 auto;             /* ❗ no crecen ni se encogen */
+  white-space: nowrap;
   }
 
   .seccion-principal {
