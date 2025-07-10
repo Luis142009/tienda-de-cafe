@@ -377,7 +377,7 @@ body {
   .navegacion {
     align-items: center;
     display: flex;
-    gap: 1.20rem;
+    gap: 1rem;
     
             /* ❗ no crecen ni se encogen */
   
